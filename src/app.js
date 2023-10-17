@@ -32,6 +32,11 @@ app.use(methodOverride('_method'));
 app.use('/', indexRouter);
 app.use(moviesRoutes);
 app.use(genresRoutes);
+app.use('/shop', (req, res) =>{
+    res.render('moviesShop');
+});
+
+
 //Aquí creo la colección de mis recursos de movies (APIs)
 app.use('/api/movies',apiMoviesRouter);
 app.use('/api/actors',apiActorsRouter);
