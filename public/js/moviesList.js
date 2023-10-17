@@ -93,3 +93,6 @@ const deleteOfCart = (i) =>{
     }
 }
 
+
+
+
